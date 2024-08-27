@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@500&display=swap');
+
+body {
+    font-family: 'Nunito Sans', Arial, sans-serif;
+    font-weight: 500;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(to right, #ffffff, #0a3871);
+}
+
+#header-image {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: auto; 
+    height: auto; 
+    z-index: 1; 
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 20;
+    color: #0a3871;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.textarea-group {
+    display: flex;
+    flex-direction: column;
+}
+
+#input-texto {
+    width: 700px;
+    height: 455px;
+    margin-right: 100px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #1d1d1f; 
+    border-radius: 20px;
+    resize: none;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans';
+    font-weight: 500;
+}
+
+.info-text {
+    margin-top: 10px;
+    font-size: 14px; 
+    color: #555; 
+}
+
+#resultado-texto {
+    width: 450px;
+    height: 500px;
+    padding: 10px;
+    border: none; 
+    outline: none; 
+    background: #f5f5f7; 
+    color: #1d1d1f; 
+    box-shadow: 4px 4px 10px #1d1d1f; 
+    border-radius: 15px;
+    resize: none;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', Arial, sans-serif; 
+    font-weight: 500;
+}
+
+.botonera {
+    display: flex;
+    gap: 70px;
+    margin-bottom: 20px;
+    color: #1d1d1f;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 27px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 4px 4px 10px #1d1d1f;
+    font-family: 'Nunito Sans';
+    font-weight: 500;
+}
+
+.footer-text {
+    font-size: 17px; /* Tamaño del texto */
+    color: #1d1d1f; /* Color del texto (blanco) */
+    margin-top: auto; /* Empuja el texto hacia el fondo */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 10px 0; /* Espacio alrededor del texto */
+    width: 100%;
+}
+
+/* Estilo específico para los botones de Encriptar y Desencriptar */
+#encriptar-button, #desencriptar-button {
+    background-color: #78b401;
+    width: 200px;
+}
+
+#encriptar-button:hover, #desencriptar-button:hover {
+    background-color: #66a300;
+}
+
+#encriptar-button:active, #desencriptar-button:active {
+    background-color: #4d8b00; 
+}
+
+/* Estilo específico para el botón de Desencriptar */
+#desencriptar-button {
+    border: 2px solid #78b401;
+    background-color: #d3d3d3;
+    color: #5c8a00;
+}
+
+/* Estilo específico para el botón de Copiar */
+#copiar-button {
+    background-color: #78b401;
+    width: 120px;
+}
+
+#copiar-button:hover {
+    background-color: #66a300;
+}
+
+#copiar-button:active {
+    background-color: #4d8b00;
+}
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textarea-group {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    #input-texto, #resultado-texto {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .button-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    #input-texto, #resultado-texto {
+        height: auto;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #input-texto, #resultado-texto {
+        height: 300px;
+    }
+}

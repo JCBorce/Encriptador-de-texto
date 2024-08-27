@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img class="imagen-alura" src="./Assets/Logo.png" alt="Descripción de la imagen" id="header-image">
+    <h1>Encriptador de Texto</h1>
+    <div class="container">
+        <div class="textarea-group">
+            <textarea id="input-texto" placeholder="Ingrese el texto aquí"></textarea>
+            <p class="info-text">Solo letras minúsculas y sin acentos.</p>
+            <div class="botonera">
+                <button id="encriptar-button" onclick="mostrarTextoEncriptado()">Encriptar</button>
+                <button id="desencriptar-button" onclick="mostrarTextoDesencriptado()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="textarea-group">
+            <textarea id="resultado-texto" readonly></textarea>
+            <div class="button-container">
+                <button id="copiar-button" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer-text">
+        JCB | Mexico | 2024
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
